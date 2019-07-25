@@ -1,0 +1,23 @@
+.darkmode {
+	background: linear-gradient(135deg, #121212 0%, lighten(#121212, 20%) 100%);
+	color: #ddd;
+
+	.main-subtitle {
+		color: #fff;
+	}
+	.items__each {
+		color: $customBlue;
+	}
+
+	.add__form {
+		label {
+			color: $customBlue;
+		}
+	}
+
+	.add__form .change {
+		label {
+			color: #fff;
+		}
+	}
+}

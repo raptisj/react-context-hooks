@@ -1,0 +1,32 @@
+@mixin breakpoint($point){
+	@if ($point == md){
+		@media (max-width: 780px) { @content }
+	}
+	@else if ($point == sm){
+		@media (max-width: 550px) { @content }
+	}
+}
+
+@mixin pseudo {
+	content: '';
+	display: block;
+	position: absolute;
+}
+
+%btnStyles {
+	background: transparent;
+	border: none;
+	border: 1px solid $customGreen;
+	color: $customGreen;
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+	padding: .5rem;
+	cursor: pointer;
+	transition: .3s;
+
+	&:hover {
+		color: #fff;
+		background: $customGreen;
+		transition: .3s;
+	}
+}

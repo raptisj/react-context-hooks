@@ -1,0 +1,387 @@
+// @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+// @mixin pseudo {
+// 	content: '';
+// 	display: block;
+// 	position: absolute;
+// }
+
+// $customGreen: #26b191;
+// $customBlue: #000028;
+
+// %btnStyles {
+// 	background: transparent;
+// 	border: none;
+// 	border: 1px solid $customGreen;
+// 	color: $customGreen;
+// 	font-size: 14px;
+// 	font-family: 'Lato', sans-serif;
+// 	padding: .5rem;
+// 	cursor: pointer;
+// 	transition: .3s;
+
+// 	&:hover {
+// 		color: #fff;
+// 		background: $customGreen;
+// 		transition: .3s;
+// 	}
+// }
+
+// .w-100 {
+// 	width: 100%;
+// }
+
+// body {
+// 	font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+// 	"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+// 	sans-serif;
+// 	-webkit-font-smoothing: antialiased;
+// 	-moz-osx-font-smoothing: grayscale;
+// 	height: 100vh;
+// 	margin: 0;
+// }
+
+/* app styles */
+// .App {
+// 	height: 100vh;
+// 	background: #e7e7e7;
+// 	margin: 0;
+// 	text-align: center;
+// 	padding-bottom: 100px;
+// }
+
+// .main-title {
+// 	position: relative;
+// 	color: $customGreen;
+// 	margin-bottom: 0;
+// }
+
+// .main-subtitle {
+// 	margin-top: 0;
+// 	font-size: .9rem;
+// 	color: $customBlue;
+// }
+
+// .darkmode__btn {
+// 	display: flex;
+// 	justify-content: flex-end;
+
+// 	button {
+// 		margin: 20px 20px 0 0;
+// 	}
+// }
+
+// .toggle__box {
+// 	display: flex;
+// 	align-items: center;
+// 	margin-top: 20px; 
+// }
+
+// .toggle__btn {
+// 	padding: 0;
+// 	position: relative;
+// 	width: 60px;
+// 	height: 24px;
+// 	margin: 0 20px 0 10px;
+// }
+
+// .circle,
+// .layer {
+// 	position: absolute;
+// 	top: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	left: 0;
+// }
+
+// .circle {
+// 	z-index: 2;
+// }
+
+// .layer {
+// 	width: 100%;
+// 	background-color: #ebf7fc;
+// 	transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+// 	border-radius: 100px;
+// 	z-index: 1;
+// }
+
+
+// // .button.r, .button.r .layer
+// // {
+// // 	border-radius: 100px;
+// // }
+
+// // .button.b2
+// // {
+// // 	border-radius: 2px;
+// // }
+
+// .checkbox {
+// 	position: relative;
+// 	width: 100%;
+// 	height: 100%;
+// 	padding: 0;
+// 	margin: 0;
+// 	opacity: 0;
+// 	cursor: pointer;
+// 	z-index: 3;
+// }
+
+// .toggle__btn .circle:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: 2px;
+// 	left: 4px;
+// 	width: 20px;
+// 	height: 20px;
+// 	color: #fff;
+// 	font-size: 10px;
+// 	font-weight: bold;
+// 	text-align: center;
+// 	line-height: 1;
+// 	// padding: 9px 4px;
+// 	background-color: #000028;
+// 	border-radius: 50%;
+// 	transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+// }
+
+// .toggle__btn .checkbox:checked + .circle:before {
+// 	content: '';
+// 	left: 37px;
+// 	background-color: #26b191;
+// }
+
+// .toggle__btn .checkbox:checked ~ .layer {
+// 	background-color: #f8f8f8;
+// 	border: 1px solid #f8f8f8;
+// }
+
+// .toggle__btn .circle, .toggle__btn .circle:before, .toggle__btn .layer {
+// 	transition: 0.3s ease all;
+// }
+
+
+// .sun-icon,
+// .moon-icon {
+// 	width: 20px;
+// 	height: 20px;
+// }
+
+// .inner__wrapper {
+// 	border-top: 3px solid #26b191;
+// 	border-right: 3px solid #26b191;
+// 	max-width: 700px;
+// 	margin: 0 auto;
+// 	padding: 30px 20px 0 0;
+// 	position: relative;
+
+// 	&::after {
+// 		@include pseudo;
+// 		top: -3px;
+// 		right: -20px;
+// 		height: 3px;
+// 		width: 20px;
+// 		background: #26b191;
+// 	}
+
+// 	&::before {
+// 		@include pseudo;
+// 		top: -20px;
+// 		width: 3px;
+// 		background: #26b191;
+// 		right: -3px;
+// 		height: 20px;
+// 		z-index: 0;
+// 	}
+// }
+
+// .add__form {
+// 	margin: 60px auto 0 auto;
+// 	max-width: 350px;
+
+// 	&-actions {
+// 		display: flex;
+// 		align-items: flex-end; 
+// 		position: relative;
+// 	}
+
+// 	.input {
+// 		position: relative;
+
+// 		&:after {
+// 			@include pseudo;
+// 			top: 40px;
+// 			width: 0%;
+// 			height: 1px;
+// 			left: -10%;
+// 			background: $customGreen;
+// 			transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+// 		}
+
+// 		&::before {
+// 			@include pseudo;
+// 			top: 5px;
+// 			left: -10px;
+// 			width: 1px;
+// 			height: calc(0% + 0px);
+// 			background: $customGreen;
+// 			transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+// 		}
+// 	}
+
+// 	label {
+// 		position: absolute;
+// 		top: 6px;
+// 		left: 6px;
+// 		font-size: .8rem;
+// 		transition: .3s;
+// 		display: block;
+// 		text-align: left;
+// 	}
+
+// 	input[type='text'] {
+// 		width: 100%;
+// 		border: none;
+// 		padding: .5rem 8px;
+// 		height: 15px;
+// 		font-size: .9rem;
+
+// 		&:focus,
+// 		&:active {
+// 			outline: 0;
+// 			box-shadow: none;
+// 		}
+// 	}
+
+// 	input[type='submit'] {
+// 		padding: .5rem 1rem;
+// 		border: none;
+// 		background: linear-gradient(135deg, #26b191 0%, lighten(#26b191, 20%) 100%);
+// 		color: #fff;
+// 		cursor: pointer;
+// 		transition: .3s;
+// 		z-index: 1;
+
+// 		&:hover {
+// 			background: linear-gradient(135deg, #26b191 0%, lighten(#26b191, 0%) 100%);
+// 			transition: .3s;
+// 		}
+// 	}
+// }
+
+// .add__form .change {
+// 	label {
+// 		top: -26px;
+// 		left: 0;
+// 		font-size: 1rem;
+// 		color: $customGreen;
+// 		transition: .3s;
+// 	}
+
+// 	.input {
+// 		&:after {
+// 			@include pseudo;
+// 			top: 40px;
+// 			width: 100%;
+// 			height: 1px;
+// 			left: -10%;
+// 			background: $customGreen;
+// 			transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+// 		}
+
+// 		&::before {
+// 			@include pseudo;
+// 			top: 5px;
+// 			left: -10px;
+// 			width: 1px;
+// 			height: calc(100% + 20px);
+// 			background: $customGreen;
+// 			transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+// 		}
+// 	}
+// }
+
+// .items {
+// 	padding: 0;
+// 	&__each {
+// 		list-style: none;
+// 		display: flex;
+// 		align-items: center;
+// 		justify-content: space-between;
+// 		background: #fff;
+// 		margin-bottom: 10px;
+// 		padding: 0 10px;
+
+// 		.btn__group {
+// 			opacity: 0;
+// 			// transition: .1s;
+// 		}
+// 		&:hover {
+// 			position: relative;
+// 			.btn__group {
+// 				opacity: 1;
+// 				transition: .3s;
+// 			}
+// 		}
+// 	}
+// }
+
+// .btn__group {
+// 	.btn__del {
+// 		@extend %btnStyles;
+// 	}
+
+// 	.btn__edit {
+// 		@extend %btnStyles;
+// 		margin: 0 0 0 10px;
+// 	}
+// }
+
+
+// .edit-song-form {
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: space-between;
+// 	width: 100%;
+// 	position: relative;
+
+// 	input {
+// 		padding: 1rem 0 1rem .4rem;
+// 		width: 100%;
+// 		border: none;
+// 		font-size: 16px;
+// 		font-size: 16px;
+// 		// border-bottom: 1px solid orange;
+
+// 		&:hover,
+// 		&:active,
+// 		&:focus {
+// 			outline: 0;
+// 			box-shadow: none;
+// 		}
+// 	}
+
+
+// 	&::before {
+// 		@include pseudo;
+// 		height: 100%;
+// 		top: 0;
+// 		left: -20px;
+// 		width: 8px;
+// 		background: orange;
+// 	}
+// }
+
+// .btn__edit-group {
+// 	display: flex;
+// }
+// .btn__save {
+// 	@extend %btnStyles;
+// 	margin: 0 0 0 10px;
+// }
+
+// .btn__cancel {
+// 	@extend %btnStyles;
+// 	margin: 0 0 0 10px;
+// }

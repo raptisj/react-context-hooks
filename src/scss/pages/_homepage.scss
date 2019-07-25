@@ -1,0 +1,94 @@
+.App {
+	height: 100vh;
+	background: #e7e7e7;
+	margin: 0;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.main-title {
+	position: relative;
+	color: $customGreen;
+	margin-bottom: 0;
+}
+
+.main-subtitle {
+	margin-top: 0;
+	font-size: .9rem;
+	color: $customBlue;
+}
+
+.inner__wrapper {
+	border-top: 3px solid #26b191;
+	border-right: 3px solid #26b191;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 30px 20px 0 0;
+	position: relative;
+
+	@include breakpoint(md) {
+		max-width: 80%;
+	}
+
+	&::after {
+		@include pseudo;
+		top: -3px;
+		right: -20px;
+		height: 3px;
+		width: 20px;
+		background: #26b191;
+	}
+
+	&::before {
+		@include pseudo;
+		top: -20px;
+		width: 3px;
+		background: #26b191;
+		right: -3px;
+		height: 20px;
+		z-index: 0;
+	}
+}
+
+.items {
+	padding: 0;
+	&__each {
+		list-style: none;
+		display: grid;
+		align-items: center;
+		background: #fff;
+		margin-bottom: 10px;
+		padding: 0 10px;
+		grid-template-columns: 1fr auto;
+		@include breakpoint(sm) {
+			padding: 10px;
+			grid-template-columns: 1fr;
+		}
+
+		.btn__group {
+			opacity: 0;
+
+			@include breakpoint(md) {
+				opacity: 1;
+			}
+		}
+		&:hover {
+			position: relative;
+			.btn__group {
+				opacity: 1;
+				transition: .3s;
+			}
+		}
+
+		p {
+			margin: 0;
+			font-size: 16px;
+			text-align: left;
+		}
+
+		.edit-field {
+			padding: 1rem 0;
+			justify-self: start;
+		}
+	}
+}
