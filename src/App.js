@@ -2,7 +2,6 @@ import React from 'react';
 import SongContextProvider from './contexts/SongContext';
 import SongList from './components/SongList';
 import './scss/main.scss';
-// import './index.scss';
 
 const App = () => {
 	return (
@@ -10,6 +9,6 @@ const App = () => {
 			<SongList />
 		</SongContextProvider>
 	);
-}
+};
 
 export default App;
